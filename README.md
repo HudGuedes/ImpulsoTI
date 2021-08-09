@@ -24,7 +24,7 @@ Você caíra na parte de login, crie um usuário para conseguir entrar no sistem
 
 Na tela inicial é onde os produtos criados estarão exibidos. Crie os produtos clicando no botão Novo produto que está na parte superior á direita. Crie 11 produtos para que a paginação apareça. Você poderá realizar a pesquisa do produto na parte de Filtros, buscando pelo nome.
 
-Criando os produtos os mesmos estarão com o Nome exibido e a quantidade do produto. Clicando no botão opções, você conseguirá editar apenas o nome, visualizar, dar entrada e retirada da quantidade que o produto tem. Se o produto acabou de ser criado, ele ainda poderá ser excluído, mas após uma alteração na quantidade, não poderá mais excluí-lo.
+Criando os produtos os mesmos estarão com o Nome exibido e a quantidade. Clicando no botão opções, você conseguirá editar apenas o nome, visualizar, dar entrada e retirada da quantidade que o produto tem. Se o produto acabou de ser criado, ele ainda poderá ser excluído, mas após uma alteração na quantidade, não poderá mais excluí-lo.
 
 O usuário que realizar alguma alteração na quantidade, tanto retirada como entrada, seu log apareça na parte Visualizar, demonstrando o usuário, a ação, a quantidade e a data que ele realizou.
 
