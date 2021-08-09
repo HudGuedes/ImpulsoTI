@@ -1,0 +1,37 @@
+<h1>
+	<%= @product.name %> <br/>
+</h1>
+<h3>
+	<small>ID: <%= @product.id %></small>
+</h3>
+
+<hr/>
+
+<h5>Nome: <%= @product.name %></h5>
+<h5>Quantidade: <%= @product.amount %></h5>
+<h5>Adicionado em: <%= @product.created_at %></h5>
+
+<hr/>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Usuario</th>
+			<th>Ação</th>
+			<th>Quantidade</th>
+			<th>Data</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @product.logs.each do |log| %>
+		<tr class="text-<%= log.operation_cd == 0 ? 'success' : 'danger' %>">
+			<td><%= log.user.email %></td>
+			<td><%= log.operation_cd == 0 ? 'Entrada' : 'Saida' %></td>
+			<td><%= log.amount %></td>
+			<td><%= log.created_at %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<%= link_to('Voltar', products_path, class: 'btn btn-dark') %>

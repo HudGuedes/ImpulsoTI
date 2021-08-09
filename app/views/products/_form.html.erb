@@ -1,0 +1,21 @@
+<div class="container">
+  <%= form_with model: @product do |form| %>
+    <div class="form-group mb-3">
+      <%= form.label :name %>
+      <%= form.text_field :name, class: "form-control", autofocus: true %>
+      <% @product.errors.full_messages_for(:name).each do |message| %>
+        <div class="text-danger"><%= message %></div>
+      <% end %>
+    </div> 
+    <% if @product.new_record? %>
+      <div class="form-group mb-3">
+        <%= form.label :amount %>
+        <%= form.number_field :amount, class: "form-control", autofocus: true %>
+        <% @product.errors.full_messages_for(:amount).each do |message| %>
+          <div class="text-danger"><%= message %></div>
+        <% end %>
+      </div>    
+    <% end %>
+    <%= form.submit class: "btn btn-dark" %>
+  <% end %>
+</div>
